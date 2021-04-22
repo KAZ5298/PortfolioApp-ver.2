@@ -1,0 +1,11 @@
+<div class="col" id="users-content">
+  <%= render partial: "users/header" %>
+  <div class="list-group">
+    <% if @user.tweets.empty? %>
+      <div class="list-group-item">
+        まだツイートはありません
+      </div>
+    <% end %>
+    <%= render partial: "users/tweet", collection: @user.tweets %>
+  </div>
+</div>

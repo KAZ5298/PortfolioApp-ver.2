@@ -1,0 +1,6 @@
+<div class="col" id="users-content">
+  <%= render partial: "users/header" %>
+  <div class="list-group">
+    <%= render @user.inverse_followers %>
+  </div>
+</div>
